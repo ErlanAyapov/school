@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+	<form method="POST" action="">
+		{% csrf_token %}
+		{{ form.title }}<br>
+		{{ form.author }}<br>
+		{{ form.body }}<br>
+		<button type="submit" class="btn btn-primary">Жаңалық +</button>
+	</form>
+</div>
+	
+{% endblock %}
